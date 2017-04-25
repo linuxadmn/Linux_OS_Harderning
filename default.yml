@@ -1,8 +1,8 @@
 ---
-- name: wrapper playbook for kitchen testing "ansible-os-hardening" with custom vars for testing
+- name: wrapper playbook for kitchen testing "Linux_OS_Harderning" with custom vars for testing
   hosts: localhost
   roles:
-    - ansible-os-hardening
+    - Linux_OS_Harderning
   vars:
     os_security_users_allow: change_user
     os_security_kernel_enable_core_dump: false
@@ -14,7 +14,7 @@
     os_security_suid_sgid_blacklist: ['/bin/umount']
     os_security_suid_sgid_whitelist: ['/usr/bin/rlogin']
 
-- name: wrapper playbook for kitchen testing "ansible-os-hardening"
+- name: wrapper playbook for kitchen testing "Linux_OS_Harderning"
   hosts: localhost
   roles:
-    - ansible-os-hardening
+    - Linux_OS_Harderning
