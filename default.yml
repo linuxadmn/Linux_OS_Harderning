@@ -2,10 +2,6 @@
 - name: wrapper playbook for "Linux_OS_Harderning" with custom vars for testing
   hosts: all
   gather_facts: false
-  pre_tasks:
-- name: notify some handlers
-  command: echo foo
-  notify: notify_listen
   tasks:
 - name: flush handlers
   meta: flush_handlers
