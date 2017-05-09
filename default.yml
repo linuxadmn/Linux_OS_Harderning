@@ -5,8 +5,7 @@
   pre_tasks:
 - name: notify some handlers
   command: echo foo
-  notify:
-- notify_listen
+  notify: notify_listen
   tasks:
 - name: flush handlers
   meta: flush_handlers
