@@ -5,6 +5,8 @@
   tasks:
   - name: flush handlers
     meta: flush_handlers
+  - debug:
+        msg: "This is a task in a play"
   vars:
     os_security_users_allow: change_user
     os_security_kernel_enable_core_dump: false
